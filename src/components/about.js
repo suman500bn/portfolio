@@ -1,44 +1,28 @@
 import React from 'react';
-import api from '../assets/icons/api.svg';
 import Skillcard from './skillcard';
+import { motion } from 'framer-motion';
+import skills from './data/about_data';
 
-const skills = [
-    {
-        icon: api,
-        title: "Backend Development",
-        about: "Experienced in developing scalable applications using Node.js,Django with competitive coding style",
-    },
-    {
-        icon: api,
-        title: "Cloud Development",
-        about: "Experienced AWS developer and Azure Certified.Configured and Deployed applications",
-    },
-    {
-        icon: api,
-        title: "Data Engineer",
-        about: "Built Data pipelines and scheduled ETL jobs.Knowledgable in Hadoop,Spark,Informatica,Airflow",
-    },
-    {
-        icon: api,
-        title: "Machine Learning",
-        about: "Developed and deployed Machine learning algorithms like personalized recommendations,content filtering",
-    },
-    {
-        icon: api,
-        title: "Frontend Development",
-        about: "I can build a beautiful and scalable SPA using HTML, CSS ,Bootstrap and React.js.",
-    },
-    {
-        icon: api,
-        title: "Dev Ops",
-        about: "Maintained CI/CD pipelines,integrated log collection and Network Security in applications",
-    },
-
-]
 
 const About = () => {
+    const about_variant = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.1, duration: 0.6
+            }
+        }
+    }
+
     return (
-        <div className="about">
+        <motion.div className="about"
+            variants={about_variant}
+            initial= 'hidden'
+            animate='visible'
+            >
             <h6 className="about__intro">
                  Dedicated IT professional with 4 years of experience in Building Data pipelines, predictive analytics, Machine Learning,Full Stack Development,Networking. 
                  Have extensive knowledge in retail chain and healthcare domain.
@@ -57,7 +41,7 @@ const About = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
 };
 

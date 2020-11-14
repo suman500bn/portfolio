@@ -1,80 +1,29 @@
 import React from 'react';
-import react from '../assets/icons/react.svg';
-import java from  '../assets/icons/java.svg';
-import python from '../assets/icons/python.svg'
+
 import Bar from './bar';
-
-const languages = [
-    {
-        icon: python,
-        name: 'Python',
-        level: '45'
-    },
-    {
-        icon: java,
-        name: 'Java',
-        level: '60'
-    },
-    {
-        icon: react,
-        name: 'react',
-        level: '80'
-    },
-    {
-        icon: react,
-        name: 'Node.js',
-        level: '60'
-    },
-    {
-        icon: react,
-        name: 'Django',
-        level: '80'
-    },
-    {
-        icon: react,
-        name: 'Serverless',
-        level: '80'
-    }
-]
-
-const tools = [
-    {
-        icon: react,
-        name: 'AWS',
-        level: '85'
-    },
-    {
-        icon: react,
-        name: 'Pyspark',
-        level: '45'
-    },
-    {
-        icon: react,
-        name: 'Tensorflow',
-        level: '60'
-    },
-    {
-        icon: react,
-        name: 'Mongo',
-        level: '45'
-    },
-    {
-        icon: react,
-        name: 'Mysql',
-        level: '90'
-    },
-    {
-        icon: react,
-        name: 'Docker',
-        level: '50'
-    }
-
-]
+import { motion } from 'framer-motion';
+import {tools,languages} from './data/resume_data';
 
 
 const Resume = () => {
+    const resume_variant = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 0.1, duration: 0.7
+            }
+        }
+    }
+
     return (
-        <div className="container resume">
+        <motion.div className="container resume"
+            variants={resume_variant}
+            initial= 'hidden'
+            animate='visible'
+            >
             <div className="row">
                 <div className="col-lg-6 resume-card" >
                     <h4 className="resume-card__heading">
@@ -85,11 +34,11 @@ const Resume = () => {
                             Computer Engineering
                         </h5>
                         <p className="resume-card__name">
-                            University of Cincinnati (2019-2020)
+                            <strong key={1}> University of Cincinnati (2019-2020) </strong>
                         </p>
                         <p className="resume-card__details">Completed Masters in Computer Engineering from University of Cincinnati.</p>
                         <p className="resume-card__name">
-                            CVR College of Engineering (2012-2016)
+                            <strong key={1}> CVR College of Engineering (2012-2016) </strong>
                         </p>
                         <p className="resume-card__details">Completed B.tech in Computer Engineering from CVR college of Engineering.</p>
                     </div>
@@ -103,21 +52,21 @@ const Resume = () => {
                             Backend Developer and ML engineer
                         </h5>
                         <p className="resume-card__name">
-                            Y apps Lab (May - Nov 2020)
+                            <strong key={1}> Y apps Lab (May '20 - Nov '20) </strong>
                         </p>
                         <p className="resume-card__details">Worked as Backend Developer for Onepot Application.</p>
                         <h5 className="resume-card__title">
                             Data Science Intern
                         </h5>
                         <p className="resume-card__name">
-                            Cincinnati Children Medical Center (Jan - June 2020)
+                            <strong key={1}> Cincinnati Children Hospital (Jan '20 - Jun '20) </strong>
                         </p>
                         <p className="resume-card__details">Worked to find impact of Chemotherapy using data analytics.</p>
                         <h5 className="resume-card__title">
                             Software Development Analyst
                         </h5>
                         <p className="resume-card__name">
-                            Ntt Data (Oct 2016 - Jul 2019)
+                            <strong key={1}> NTT Data (Oct '16 - Jul '19) </strong>
                         </p>
                         <p className="resume-card__details">Worked as Data Engineer for retail chain client.</p>
                     </div>
@@ -148,7 +97,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

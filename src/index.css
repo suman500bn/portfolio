@@ -55,7 +55,7 @@ a:hover {
     height: 110px;
     width: 120px;
     object-fit: contain;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 .sidebar__icon {
@@ -264,7 +264,7 @@ a:hover {
 
 /* projects */
 .projects {
-    height: 72vh;
+    height: 70vh;
     padding-top: 30px;
     overflow-y: auto;
 }
@@ -281,11 +281,11 @@ a:hover {
     height: 80%;
     border-radius: 30px;
     border: 1px solid #00F260;
-    transition: transform 0.3s linear;
+    transition: transform 0.1s linear;
 }
 
 .projectCard__image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .projectCard__icon {
