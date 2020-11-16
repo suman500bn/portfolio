@@ -52,7 +52,7 @@ a:hover {
 }
 
 .sidebar__avatar{
-    height: 110px;
+    height: 120px;
     width: 120px;
     object-fit: contain;
     border-radius: 50%;
@@ -98,6 +98,7 @@ a:hover {
     padding: 2px 0;
     margin: 20px -7px;
     box-shadow: 0 0 10px rgb(192, 190, 190);
+    font-family: sansserif;
 }
 
 .sidebar__contact:hover{
@@ -169,6 +170,8 @@ a:hover {
 .about__intro {
     font-size: 1.05rem;
     padding: 20px;
+    font-family: sansserif;
+    text-align: justify;
 }
 
 .about__container {
