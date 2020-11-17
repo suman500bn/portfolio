@@ -243,6 +243,25 @@ a:hover {
     padding-top: 5px;
 }
 
+.area {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}
+
+.area__icon {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.area__caption {
+    display: block;
+    margin-bottom: 20px;
+}
+
 /* bar */
 .bar {
     width: 90%;
