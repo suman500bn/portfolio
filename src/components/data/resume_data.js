@@ -13,7 +13,7 @@ const languages = [
     {
         icon: python,
         name: 'Python',
-        level: '45'
+        level: '80'
     },
     {
         icon: java,
@@ -23,17 +23,17 @@ const languages = [
     {
         icon: react,
         name: 'React',
-        level: '80'
+        level: '70'
     },
     {
         icon: node,
         name: 'Node.js',
-        level: '60'
+        level: '80'
     },
     {
         icon: django,
         name: 'Django',
-        level: '80'
+        level: '70'
     },
     {
         icon: react,
@@ -51,27 +51,27 @@ const tools = [
     {
         icon: spark,
         name: 'Pyspark',
-        level: '45'
+        level: '75'
     },
     {
         icon: tensorflow,
         name: 'Tensorflow',
-        level: '60'
+        level: '70'
     },
     {
         icon: mongo,
         name: 'Mongo',
-        level: '45'
+        level: '95'
     },
     {
         icon: react,
         name: 'Mysql',
-        level: '90'
+        level: '95'
     },
     {
         icon: docker,
         name: 'Docker',
-        level: '50'
+        level: '70'
     }
 
 ]
