@@ -24,7 +24,7 @@ const About = () => {
             animate='visible'
             >
             <h6 className="about__intro">
-                 Dedicated IT professional with 4 years of experience in Building Data pipelines, predictive analytics, Machine Learning,Full Stack Development,Networking. 
+                 Dedicated IT professional with 4 years of experience in Full Stack Development, Building Data pipelines, Machine Learning, Data Analysis and Networking. 
                  Have extensive knowledge in retail chain and healthcare domain.
  
             </h6>
